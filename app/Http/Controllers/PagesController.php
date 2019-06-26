@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index(){
-        $title = 'Welcome To Laravel!';
-        //return view('pages.index', compact('title'));
-        return view('pages.index')->with('title', $title);
+        return redirect('localization/'.app()->getLocale());
     }
 
     public function about(){
@@ -23,5 +21,10 @@ class PagesController extends Controller
             'services' => ['Web Design', 'Programming', 'SEO']
         );
         return view('pages.services')->with($data);
+    }
+
+    public function changeLang(Request $request, $locale) {
+        app()->setLocale($locale);
+        return view('pages.index');
     }
 }
