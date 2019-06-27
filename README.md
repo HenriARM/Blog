@@ -10,6 +10,8 @@ php artisan migrate:reset
 php artisan migrate
 
 php artisan tinker
+
+php artisan route:list // all the API methods
 ```
 
 ### Apache on MacOS
