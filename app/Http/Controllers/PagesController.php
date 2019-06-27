@@ -27,4 +27,8 @@ class PagesController extends Controller
         app()->setLocale($locale);
         return view('pages.index');
     }
+
+    public function showAdmin(Request $request) {
+        return view('pages.admin');
+    }
 }
