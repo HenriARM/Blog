@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@index')->middleware('logincheck');;
 //Route::get('/about', 'PagesController@about');
 //Route::get('/services', 'PagesController@services');
 Route::get('localization/{locale}', 'PagesController@changeLang');
