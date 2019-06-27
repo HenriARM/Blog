@@ -1,6 +1,6 @@
-#Scripts for working with application
+# Scripts for working with application
 
-###Laravel
+### Laravel
 
 ```shell
 php artisan list // show available commands
@@ -12,7 +12,7 @@ php artisan migrate
 php artisan tinker
 ```
 
-###Apache on MacOS
+### Apache on MacOS
 
 * check version of Apache :
 
@@ -38,7 +38,7 @@ apachectl configtest // prints logs
 /etc/apache2
 ```
 
-###Heroku
+### Heroku
 
 ```jshelllanguage
 heroku login
@@ -53,7 +53,7 @@ heroku logs
 heroku ps
 ```
 
-###MySQL
+### MySQL
 
 ```jshelllanguage
 mysql -u user_name -p // enter into mysql as a user_name
